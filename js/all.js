@@ -1,8 +1,9 @@
 $(document).ready(function () {
-    // 圖片lazyload
-    $("img.lazyload").show().lazyload({
-        effect : "fadeIn"
+    // 圖片lozad
+    const observer = lozad('.lozad', {
+        rootMargin: "150px 0px"
     });
+    observer.observe();
     //navbar menu 收合
     $('.navbar-nav>li>a').on('click', function(){
         $('.navbar-collapse').removeClass('show');
@@ -15,36 +16,36 @@ $(document).ready(function () {
             scrollTop: 0,
          }, 500);
     });
-    $('.navbar-nav>li>a[href="#support"]').on('click', function () {
+    $('.navbar-nav>li>a[href="#section1"]').on('click', function () {
         $('html,body').animate({
-            scrollTop: $('#support').offset().top,
+            scrollTop: $('#section1').offset().top - 56,
          }, 500);
     });
-    $('.navbar-nav>li>a[href="#introduction"]').on('click', function () {
+    $('.navbar-nav>li>a[href="#section2"]').on('click', function () {
         $('html,body').animate({
-            scrollTop: $('#introduction').offset().top,
+            scrollTop: $('#section2').offset().top - 56,
          }, 500);
     });
-    $('.navbar-nav>li>a[href="#keypoint_four"]').on('click', function () {
+    $('.navbar-nav>li>a[href="#section3"]').on('click', function () {
         $('html,body').animate({
-            scrollTop: $('#keypoint_four').offset().top,
+            scrollTop: $('#section3').offset().top - 56,
          }, 500);
     });
-    $('.navbar-nav>li>a[href="#question"]').on('click', function () {
+    $('.navbar-nav>li>a[href="#section4"]').on('click', function () {
         $('html,body').animate({
-            scrollTop: $('#question').offset().top,
+            scrollTop: $('#section4').offset().top - 56,
          }, 500);
     });
     $('a[href="#buy"]').on('click', function () {
         $('html,body').animate({
-            scrollTop: $('#buy').offset().top,
+            scrollTop: $('#buy').offset().top - 56,
          }, 500);
     });
     // 立即訂購btn動態
     $('.buybtn').click(function (e) { 
         e.preventDefault();
         $('html , body').animate({
-            scrollTop: $('#buy').offset().top,
+            scrollTop: $('#buy').offset().top - 56,
         },900);
     });
 });
