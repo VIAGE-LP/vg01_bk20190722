@@ -1,6 +1,17 @@
 .carousel-item{
-    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+    transition: transform 0.1s ease-in-out,-webkit-transform 0.1s ease-in-out;
 }
+#color_carousel_1 .carousel-control-prev{
+    background-color: black;
+    width: 3%;
+    margin-left: 3.5%;
+   }
+#color_carousel_1 .carousel-control-next{
+    background-color: black;
+    width: 3%;
+    margin-right: 3.8%;
+}
+
 .navbar{
     background-color: #0F1F4A;
     position: fixed;
