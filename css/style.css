@@ -1,3 +1,6 @@
+.carousel-item{
+    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+}
 .navbar{
     background-color: #0F1F4A;
     position: fixed;
