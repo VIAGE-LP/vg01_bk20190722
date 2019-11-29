@@ -38,14 +38,14 @@ $(document).ready(function () {
     });
     $('a[href="#buy"]').on('click', function () {
         $('html,body').animate({
-            scrollTop: $('#buy').offset().top - 56,
+            scrollTop: $('#buy').offset().top + 150,
          }, 500);
     });
     // 立即訂購btn動態
     $('.buybtn').click(function (e) { 
         e.preventDefault();
         $('html , body').animate({
-            scrollTop: $('#buy').offset().top - 56,
+            scrollTop: $('#buy').offset().top + 150,
         },900);
     });
 });
