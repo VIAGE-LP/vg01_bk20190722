@@ -78,16 +78,14 @@ const SETTING_PROMOTION_CODE = 'vg01b';
 // - cycle
 //  => 定期配送サイクル
 // **************************************************
-const SETTING_PRODUCT_LIST = [
-    {
-        code: "",
-        name: "",
-        isRegular: "0",
-        cycle: "",
-        defaultVal: "",
-        visible: 1
-    }
-];
+const SETTING_PRODUCT_LIST = [{
+  code: '',
+  name: '',
+  isRegular: '0',
+  cycle: '',
+  defaultVal: '',
+  visible: 1
+}];
 
 // **************************************************
 // 初期値の設定

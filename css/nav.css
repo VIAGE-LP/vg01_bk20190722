@@ -315,7 +315,7 @@ nav a.navbar-toggler:before {
 }
 
 .button {
-  background-color: #0F1F4A;
+  background-color: #DB1C0D;
   border: none;
   border-radius:0;
   color: white;
@@ -326,7 +326,7 @@ nav a.navbar-toggler:before {
   -webkit-appearance: none;
 }
 .button:hover{
-  background-color: #0F1F4A;
+  background-color: #DB1C0D;
   border: none;
   border-radius:0;
   color: white;
