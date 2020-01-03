@@ -1,5 +1,18 @@
 $(document).ready(function () {
     $('.secondBox').hide();
+    $('.card').hide();
+
+    //點擊"立即確認尺寸"按鈕
+    $('#calculator').on('click', function (e) {
+        $('#calculator').hide();
+        $('.card').show();
+    });
+
+    //點擊"X"按鈕
+    $('.close').on('click', function (e) {
+        $('#calculator').show();
+        $('.card').hide();
+    });
 
     //若選擇罩杯、上圍則不能再輸入
     $('#cup').on('change', function () {
@@ -143,7 +156,7 @@ $(document).ready(function () {
             $('.Lowerchest').append(`<span style="color:red"><small>  必填</small></span>`);
             return;
         } else if ((Upperchest == "請選擇") && (cup == "請選擇")) {
-            $('.cup,.Upperchest').append(`<span style="color:red"><small>  擇一選填</small></span>`);
+            $('.cup,.Upperchest').append(`<span style="color:red"><small>  請擇一選填</small></span>`);
             return;
         } else if ((cup == "請選擇") && (Lowerchest == "請選擇")) {
             $('.Lowerchest').append(`<span style="color:red"><small>  必填</small></span>`);
@@ -151,8 +164,7 @@ $(document).ready(function () {
         } else {
             $('.firstBox').hide();
             $('.photo').attr("src", style);
-            $('.cupText').text(cup);
-            $('.sizeText').text(size);
+            $('.secondBox h5').html(`<h5 class="card-title">您的罩杯為<span class="cupText">${cup}</span>，適合的尺寸為<span class="sizeText">${size}</span></h5>`);
             $('.suggestionText').text(suggestion);
             $('.secondBox').show();
         }
@@ -175,7 +187,7 @@ $(document).ready(function () {
         $('.secondBox').hide();
         $('#cup,#Upperchest').removeAttr("disabled");
         //清空 表單驗證反饋訊息
-        $('label>span').empty();
+        $("#reset").trigger('click');
         $('.firstBox').show();
     });
 });

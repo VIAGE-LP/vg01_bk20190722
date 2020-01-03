@@ -195,12 +195,16 @@
     cursor: pointer;
 }
 
+.fixBox{
+    
+}
+
 .buybtn{
     width: 174px;
     position: fixed;
     right: 0;
     bottom: 45px;
-    z-index: 99;
+    z-index: 98;
 }
 .buybtn img{width: 100%; height: auto;}
 
@@ -211,24 +215,37 @@
     }
 }
 
-#sizearea{
-    position: relative;
+.calculator_box{
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    z-index: 99;
+}
+#calculator{
+    position: fixed;
+    right: 24px;
+    bottom: 8px;
 }
 #selectForm{
     width: 15rem;
-    position: absolute;
-    left: 1%;
-    top: 14%;
-    z-index: 99;
 }
 
 @media screen and (max-width: 768px){
+    .calculator_box{
+        right: 4px;
+        bottom: 8px;
+        z-index: 99;
+    }
+    #calculator{
+        padding: .25rem .5rem;
+        font-size: .875rem;
+        line-height: 1.5;
+        border-radius: .2rem;
+        right: 4px;
+        bottom: 14px;
+    }
     #selectForm{
-        width: 100%;
-        position: relative;
-        left: 0px;
-        top: 0px;
-        border: none;
+        width: 20rem;
     }
 }
 
