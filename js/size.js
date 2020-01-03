@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 
     //點擊"X"按鈕
-    $('.close').on('click', function (e) {
+    $('.close,#small').on('click', function (e) {
         $('#calculator').show();
         $('.card').hide();
     });
