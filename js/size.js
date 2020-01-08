@@ -5,6 +5,9 @@ $(document).ready(function () {
     //點擊"立即確認尺寸"按鈕
     $('#calculator').on('click', function (e) {
         $('#calculator').hide();
+        // $('html,body').animate({
+        //     scrollTop: $('#sizearea').offset().top - 56,
+        //  }, 500);
         $('.card').show();
     });
 
