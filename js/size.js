@@ -161,7 +161,7 @@ $(document).ready(function () {
         //表單驗證＆反饋訊息
         if ((Lowerchest == "NaN") || (cupMath < 0)) {
             $('.firstBox').hide();
-            $('.photo').attr("src", "images/SMP/14_color_01_SMP.jpg");
+            $('.photo').attr("src", "images/SMP/14_color_all_SMP.jpg");
             $('.secondBox h5').text("X");
             $('.suggestionText').html(`很抱歉！目前還沒有提供適合您的尺寸，想了解新尺寸推出相關訊息歡迎您持續關注我們喔！
             <br>
@@ -213,7 +213,7 @@ $(document).ready(function () {
         } else {
             $('.firstBox').hide();
             $('.photo').attr("src", style);
-            $('.secondBox h5').html(`<h5 class="card-title">您的罩杯為<span class="cupText">${cup}</span>，適合的尺寸為<span class="sizeText">${size}</span></h5>`);
+            $('.secondBox h5').html(`<h5 class="card-title" style="font-weight: bold; font-family: 微軟正黑體;">您的罩杯為<span class="cupText">${cup}</span>，適合的尺寸為<span class="sizeText">${size}</span></h5>`);
             $('.secondBox').show();
         }
     });
