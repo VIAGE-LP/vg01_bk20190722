@@ -1,260 +1,48 @@
-.carousel-item{
-    transition: transform 0.1s ease-in-out,-webkit-transform 0.1s ease-in-out;
-}
-#color_carousel_1 .carousel-control-prev{
-    background-color: black;
-    width: 3%;
-    margin-left: 3.5%;
-   }
-#color_carousel_1 .carousel-control-next{
-    background-color: black;
-    width: 3%;
-    margin-right: 3.8%;
-}
-
-.navbar{
-    background-color: #0F1F4A;
-    position: fixed;
-    z-index: 100;
+html,body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        border: none;
+    }
+.main {
     width: 100%;
-}    
-.navbar a{
-    text-decoration: none;
-}
-  
-.nav-link.logo-router h1{
-    margin: 0px;
-}
-  
-.logo{
-  width: 103px;
-  height: 55px;
-  background-image: url(../images/logo.png);
-  display: block;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-  background-repeat: no-repeat;
-}
-
-.nav-link.logo-router{
-    padding: 0;
-}
-
-@media screen and (max-width: 768px){
-    .nav-link.logo-router h1 {
-       display: none;
-      }
-}
-.nav-link.logo-router h5{
-    display: inline-block;
-    padding: 16px 0 16px 16px;
-    margin: 0px;
-    color: white;
-}
-
-
-.navbar-light .navbar-nav .nav-link {
-  background-color: #15285F;
-  color: white;
-  font-size: 1rem;
-  padding: 1em 2em;
-  border-left: 1px solid #475578;
-}
-@media screen and (max-width: 768px){
-    .navbar-light .navbar-nav .nav-link {
-        border-top: 1px solid #475578;
-        padding: 0.8em 1em;
-      }
-}
-
-.navbar-light .navbar-nav .nav-link:focus{
-    background-color: #2E689E;
-    color: white;
-}
-.navbar-light .navbar-nav .nav-link:hover{
-    background-color: #2E689E;
-    color: white;
-}
-.navbar-light .navbar-nav .nav-link .menutext{
-    background-color: #2E689E;
-    color: white;
-}
-.navbar-toggler {
-    padding: 0.25rem 9px;
-}
-
-
-/* PC */
-.set3{
     margin: 0 auto;
-    position: relative;
-    width: 1024px;
-    height: 591px;
-    background-position: center;
 }
-
-.set3_btn {
-    position: absolute;
-    right: 251px;
-    width: 542px;
-    bottom: 53px;
-}
-.set3_btn:hover{
-    opacity: 0.8;
-}
-
-.all_set{
+.PC img {
+    width: 100%;
+    display: block;
     margin: 0 auto;
-    position: relative;
-    width: 1024px;
-    height: 2564px;
-    background-position: center;
 }
-.cta_3set_btn{
-    position: absolute;
-    top: 647px;
-    left: 176px;
-    width: 670px;
-}
-.cta_3set_btn:hover{
-    opacity: 0.6;
-}
-
-.cta_5set_btn{
-    position: absolute;
-    top: 1291px;
-    left: 176px;
-    width: 670px;
-}
-.cta_5set_btn:hover{
-    opacity: 0.6;
-}
-.cta_4set_btn{
-    position: absolute;
-    top: 1938px;
-    left: 176px;
-    width: 670px;
-}
-.cta_4set_btn:hover{
-    opacity: 0.6;
-}
-.cta_2set_btn{
-    position: absolute;
-    bottom: 239px;
-    right: 175px;
-    width: 268px;
-}
-.cta_2set_btn:hover{
-    opacity: 0.6;
-}
-.cta_1set_btn{
-    position: absolute;
-    bottom: 43px;
-    right: 175px;
-    width: 268px;
-}
-.cta_1set_btn:hover{
-    opacity: 0.8;
-}
-.power_area{
+.SP img {
+    width: 100%;
+    display: block;
     margin: 0 auto;
-    position: relative;
-    width:1024px;
-    height: 2110px;
-    background: url(../images/06_power.jpg);
-    background-position: center;
-    background-size: 100%;
 }
-
-
-.future_area{
-    margin: 0 auto;
-    position: relative;
-    width: 1060px;
-    height: 1869px;
-    background: url(../images/10_future.jpg);
-    background-position: center;
-    background-size: 100%;
-}
-.future_btn{
-    position: absolute;
-    top: 953px;
-    left: 250px;
-    width: 557px;
-}
-.future_btn:hover{
-    opacity: 0.6;
-}
-.sns_btn {
+.buybtn{
+    margin: 1% auto 4% auto;
+    width: 20%;
+    display:block;
     text-align: center;
 }
-.sns_btn ul li{
-    display: inline-block;
-    margin: 0 8px;
-    cursor: pointer;
+.buybtn:hover{
+    opacity: 0.8; 
 }
-
-.buybtn{
-    width: 174px;
-    position: fixed;
-    right: 0;
-    bottom: 45px;
-    z-index: 98;
-}
-.buybtn img{width: 100%; height: auto;}
 
 @media screen and (max-width: 768px){
     .buybtn{
-        width: 28%;
-        max-width: 170px;
+        margin: 0% auto 5% auto;
+        width: 58%;
     }
 }
 
-.calculator_box{
-    position: fixed;
-    right: 8px;
-    bottom: 8px;
-    z-index: 99;
-}
-#calculator{
-    position: fixed;
-    right: 30px;
-    bottom: 8px;
-}
-#selectForm{
-    width: 15rem;
-}
-
-@media screen and (max-width: 768px){
-    .calculator_box{
-        right: 4px;
-        bottom: 8px;
-        z-index: 99;
-    }
-    #calculator{
-        padding: .25rem .5rem;
-        font-size: .875rem;
-        line-height: 1.5;
-        border-radius: .2rem;
-        right: 8px;
-        bottom: 14px;
-    }
-    #selectForm{
-        width: 20rem;
-    }
-}
-
-
-
-.mobile{
+.SP{
     display: none;
 }
 @media screen and (max-width: 768px){
 .PC{
     display: none;
 }
-.mobile{
+.SP{
     display: block;
 }
 }
