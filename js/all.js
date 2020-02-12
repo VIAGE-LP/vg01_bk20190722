@@ -9,7 +9,7 @@ $(document).ready(function () {
     $('.buybtn').click(function (e) { 
         e.preventDefault();
         $('html , body').animate({
-            scrollTop: $('#lp_form').offset().top,
+            scrollTop: $('#size').offset().top,
         },900);
     });
 });
