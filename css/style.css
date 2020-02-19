@@ -18,18 +18,25 @@ html,body {
     display: block;
     margin: 0 auto;
 }
-.buybtn{
-    margin: 1% auto 4% auto;
-    width: 20%;
-    display:block;
-    text-align: center;
+
+.PC .offerbox{
+    position: relative;
 }
+
+.PC .offerbox .buybtn{
+    position: absolute;
+    width: 20%;
+    display: block;
+    bottom: 11%;
+    right: 40%;
+}
+
 .buybtn:hover{
     opacity: 0.8; 
 }
 
 @media screen and (max-width: 768px){
-    .buybtn{
+    .SP .buybtn{
         margin: 0% auto 5% auto;
         width: 58%;
     }
@@ -46,3 +53,5 @@ html,body {
     display: block;
 }
 }
+
+
