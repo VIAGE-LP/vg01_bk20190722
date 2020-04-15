@@ -23,7 +23,7 @@ html,body {
     position: relative;
 }
 
-.PC .offerbox .buybtn{
+.PC .offerbox .offerbtn{
     position: absolute;
     width: 20%;
     display: block;
@@ -31,14 +31,54 @@ html,body {
     right: 40%;
 }
 
-.buybtn:hover{
+.SP .offerbox_m{
+    position: relative;
+}
+
+.SP .offerbox_m .offerbtn_m{
+    position: absolute;
+    width: 63%;
+    display: block;
+    right: 18%;
+    top: 47.5%;
+}
+
+.offerbtn:hover{
     opacity: 0.8; 
 }
 
 @media screen and (max-width: 768px){
-    .SP .buybtn{
+    .SP .offerbtn{
         margin: 0% auto 5% auto;
         width: 58%;
+    }
+}
+
+.sns_btn {
+    text-align: center;
+}
+.sns_btn ul li{
+    display: inline-block;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.buybtn{
+    width: 174px;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    z-index: 99;
+}
+.buybtn img{
+    width: 100%; 
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .buybtn {
+        width: 28%;
+        max-width: 170px;
     }
 }
 
