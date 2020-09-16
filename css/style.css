@@ -27,7 +27,7 @@ html,body {
     position: absolute;
     width: 20%;
     display: block;
-    bottom: 11%;
+    bottom: 41%;
     right: 40%;
 }
 
@@ -35,12 +35,20 @@ html,body {
     position: relative;
 }
 
-.SP .offerbox_m .offerbtn_m{
+.SP .offerbox_m .offerbtn_m_1{
     position: absolute;
     width: 63%;
     display: block;
     right: 18%;
-    top: 47.5%;
+    top: 51.5%;
+}
+
+.SP .offerbox_m .offerbtn_m_2{
+    position: absolute;
+    width: 63%;
+    display: block;
+    right: 18%;
+    bottom: 2.5%;
 }
 
 .offerbtn:hover{
@@ -79,6 +87,25 @@ html,body {
     .buybtn {
         width: 28%;
         max-width: 170px;
+    }
+}
+
+.modal_img_style{
+    max-width: 100%;
+    height:auto;
+}
+@media screen and (max-width: 768px){
+    .modal_img_style{
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 768px){
+    .media-body{
+        height: 21vh;
+        overflow:auto;
+    }
+    .modal{
+        top:60px;
     }
 }
 
